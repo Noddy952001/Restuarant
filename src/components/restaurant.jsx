@@ -4,10 +4,11 @@ import axios from "axios"
 export const Restaurants = () => {
 
         const [data,setData] = useState([]);
-        const [counter ,setCounter] = useState(0)
+        const [filterData , setfilterData] = useState([])
         const [status , setStatus] = useState(true)
         const [page, setPage] = useState(1);
         const perPage = 5;
+
 
         React.useEffect(()=>{
           getdata()
@@ -19,11 +20,13 @@ export const Restaurants = () => {
               params: {
                 _page: page,
                 _limit: perPage,
-                
+                // payment_methods : Payment,
+               
               }
             })
                 .then((res) => {
                  setData(res.data);
+                 setfilterData(res.data)
                 }) 
                 .catch((err) => {
                     setData([]);
@@ -31,9 +34,8 @@ export const Restaurants = () => {
           };
 
 
-
         useEffect(() => {
-            getdata(page, perPage);
+            getdata(page, perPage ) ;
         }, [page, perPage]);
 
         
@@ -53,72 +55,69 @@ export const Restaurants = () => {
                 setStatus(true)
             }
             setData(All_data);
-            setCounter(counter+1)
           
             console.log(All_data)
         }
 
+        
 
-        function Handel_rating(){
-            let All_data = [...data]
+        function Handel_rating(rating){
+            let All_data = [...filterData]
 
             All_data = All_data.filter((el) => {
-
-              return el.rating > 3
-           
+              return el.rating > rating
             })
             setData(All_data);
-            setCounter(counter+1)
-
             console.log(All_data)
-            
-            // All_data.sort( function (el){
-            //     if(el.rating > 2.5){
-            //         return el.rating;
-            //     }
-            //     console.log(el.rating)
-            // })
-            // setData(All_data);
-            // setCounter(counter+1)
-            
         }
 
 
-        function Handling_payment(){
+        function Handling_payment_cash(){
+            let All_data = [...filterData]
 
-
-            // data.sort(function(el){
-            //   if(el.payment_methods == "cash"){
-            //       return el.payment_methods
-            //   }
-            // })
-
-            data.filter(({ payment_methods }) => payment_methods === "cash")
-            setData(data);
-            setCounter(counter+1)
-            
-            console.log(data)
-
+            All_data = All_data.filter((el) => {
+                if(el.payment_methods == "cash"){
+                    return el.payment_methods
+                }
+            })
+            setData(All_data);
+            console.log(All_data)
         }
 
+        function Handling_payment_card(){
+            let All_data = [...filterData]
 
+            All_data = All_data.filter((el) => {
+                if(el.payment_methods == "card"){
+                    return el.payment_methods
+                }
+            })
+            setData(All_data);
+            console.log(All_data)
+        }
+
+   
+            const All_btn_data = () => {
+                axios.get("http://localhost:3001/data").then(function (res){
+                    setData(res.data)
+                })
+            }
 
 
         return (
           <>
 
             <div>
-                <button onClick={Handling_payment}>Cash</button>
-                <button>card</button>
-                <button>All</button>
+                <button onClick={ () => Handling_payment_cash() }>Cash</button>
+                <button onClick={() => Handling_payment_card()} >Card</button>
+                <button  onClick={All_btn_data}>All</button>
             </div>
 
             <div>
-                <button>All</button>
-                <button onClick={Handel_rating}>above 4</button>
-                <button>above 3</button>
-                <button>above 2</button>
-
+                <button onClick={All_btn_data}>All</button>
+                <button onClick={ () => Handel_rating(4)}>above 4</button>
+                <button onClick={() => Handel_rating(3)}>above 3</button>
+                <button onClick={() => Handel_rating(2)}>above 2</button>
             </div>
             
             <div>
