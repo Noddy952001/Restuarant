@@ -1,0 +1,134 @@
+{
+    "data" : [
+        {
+            "name": "URU Brew Park",
+            "id": 1,
+            "cuisine": ["continental", "Asian", "Pizza", "Deserts"],
+            "costForTwo": 600,
+            "minOrder": 50,
+            "deliveryTime": 30,
+            "payment_methods":"card",
+            "rating": 4.3,
+            "votes": 300,
+            "reviews": 4.4,
+            "src": "https://www.linguahouse.com/linguafiles/md5/d01dfa8621f83289155a3be0970fb0cb"
+        },
+        
+          {
+                "name": "Kovai Alangar vilas",
+                "id": 2,
+                "cuisine": ["continental", "Asian", "Pizza", "Deserts"],
+                "costForTwo": 400,
+                "minOrder": 50,
+                "deliveryTime": 30,
+                "payment_methods": "cash",
+                "rating": 4,
+                "votes": 300,
+                "reviews": 445,
+                "src": "https://upload.wikimedia.org/wikipedia/commons/6/62/Barbieri_-_ViaSophia25668.jpg"
+            },
+            {
+                "name": "Kovai Alangar vilas",
+                "id": 2,
+                "cuisine": ["continental", "Asian", "Pizza", "Deserts"],
+                "costForTwo": 300,
+                "minOrder": 50,
+                "deliveryTime": 30,
+                "payment_methods": "cash",
+                "rating": 2.3,
+                "votes": 300,
+                "reviews": 445,
+                "src": "https://upload.wikimedia.org/wikipedia/commons/6/62/Barbieri_-_ViaSophia25668.jpg"
+            },          {
+                "name": "Kovai Alangar vilas",
+                "id": 2,
+                "cuisine": ["continental", "Asian", "Pizza", "Deserts"],
+                "costForTwo": 340,
+                "minOrder": 50,
+                "deliveryTime": 30,
+                "payment_methods": "card",
+                "rating": 3.4,
+                "votes": 300,
+                "reviews": 445,
+                "src": "https://upload.wikimedia.org/wikipedia/commons/6/62/Barbieri_-_ViaSophia25668.jpg"
+            },
+            {
+                "name": "Kovai Alangar vilas",
+                "id": 2,
+                "cuisine": ["continental", "Asian", "Pizza", "Deserts"],
+                "costForTwo": 620,
+                "minOrder": 50,
+                "deliveryTime": 30,
+                "payment_methods":"card",
+                "rating": 4,
+                "votes": 300,
+                "reviews": 445,
+                "src": "https://upload.wikimedia.org/wikipedia/commons/6/62/Barbieri_-_ViaSophia25668.jpg"
+            },
+            {
+                "name": "Kovai Alangar vilas",
+                "id": 2,
+                "cuisine": ["continental", "Asian", "Pizza", "Deserts"],
+                "costForTwo": 110,
+                "minOrder": 50,
+                "deliveryTime": 30,
+                "payment_methods": "cash",
+                "rating": 4.5,
+                "votes": 300,
+                "reviews": 445,
+                "src": "https://upload.wikimedia.org/wikipedia/commons/6/62/Barbieri_-_ViaSophia25668.jpg"
+            },
+            {
+                "name": "Kovai Alangar vilas",
+                "id": 2,
+                "cuisine": ["continental", "Asian", "Pizza", "Deserts"],
+                "costForTwo": 450,
+                "minOrder": 50,
+                "deliveryTime": 30,
+                "payment_methods": "cash",
+                "rating": 2,
+                "votes": 800,
+                "reviews": 445,
+                "src": "https://upload.wikimedia.org/wikipedia/commons/6/62/Barbieri_-_ViaSophia25668.jpg"
+            },
+            {
+                "name": "Kovai Alangar vilas",
+                "id": 2,
+                "cuisine": ["continental", "Asian", "Pizza", "Deserts"],
+                "costForTwo": 446,
+                "minOrder": 50,
+                "deliveryTime": 30,
+                "payment_methods":"card",
+                "rating": 3,
+                "votes": 300,
+                "reviews": 445,
+                "src": "https://upload.wikimedia.org/wikipedia/commons/6/62/Barbieri_-_ViaSophia25668.jpg"
+            },
+            {
+                "name": "Kovai Alangar vilas",
+                "id": 2,
+                "cuisine": ["continental", "Asian", "Pizza", "Deserts"],
+                "costForTwo": 220,
+                "minOrder": 50,
+                "deliveryTime": 30,
+                "payment_methods": "card",
+                "rating": 2.5,
+                "votes": 300,
+                "reviews": 445,
+                "src": "https://upload.wikimedia.org/wikipedia/commons/6/62/Barbieri_-_ViaSophia25668.jpg"
+            },
+                      {
+                "name": "Kovai Alangar vilas",
+                "id": 2,
+                "cuisine": ["continental", "Asian", "Pizza", "Deserts"],
+                "costForTwo": 760,
+                "minOrder": 50,
+                "deliveryTime": 30,
+                "payment_methods": "cash",
+                "rating": 3.5,
+                "votes": 300,
+                "reviews": 445,
+                "src": "https://upload.wikimedia.org/wikipedia/commons/6/62/Barbieri_-_ViaSophia25668.jpg"
+            }
+    ]
+}
